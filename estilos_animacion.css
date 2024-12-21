@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor{
+    margin-top: 20px;
+
+}
+
+.animacion-boton{
+    animation: moverBoton 2s infinite alternate; 
+}
+
+@keyframes moverBoton {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+.animacion-imagen{
+    animation: girarImagen 3s linear infinite;
+}
+
+@keyframes girarImagen {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+}
+
+.animacion-div{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: cambiarColorDiv 2s infinite alternate;
+}
+
+@keyframes cambiarColorDiv {
+    0%{
+        background-color: coral;
+    }
+    100%{
+        background-color: lightblue;
+    }
+}
+
+.animacion-formulario{
+    animation: agrandarFormulario 2s infinite alternate;
+}
+
+@keyframes agrandarFormulario {
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+}

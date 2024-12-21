@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor{
+    flex: 1;
+    height: 80vh;
+    overflow: hidden;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.boton{
+    background-color: #add8e6;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in, background-color 0.3s ease-in-out;
+}
+
+.contenedor:hover{
+    background-color: #a0a0a0;
+}
+
+.boton:hover{
+    transform: scale(3);
+    background-color: #8b0000;
+}
+
+.boton:active{
+    transform: scale(1) rotate(360deg);
+}
+
+#boton2{
+    width: 100%;
+    transition: witdh 0.3 ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#boton2:active{
+    transform: scale(0.3);
+}
